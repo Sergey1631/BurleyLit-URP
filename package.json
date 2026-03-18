@@ -1,0 +1,12 @@
+{
+  "name": "com.sergey1631.burleylit",
+  "displayName": "Burley Lit",
+  "version": "0.1.0",
+  "description": "<b>Lit Shader with Burley (Disney) diffuse model.</b>",
+  "dependencies": {
+    "com.unity.test-framework": "1.6.0"
+  },
+  "author": {
+    "name": "Sergey1631"
+  }
+}
