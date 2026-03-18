@@ -22,7 +22,7 @@ Notes
 
 Comparison
 ------------
-[Lambert and Burley comparison](Documentaton/Comparison.md)
+[Lambert and Burley comparison](Documentation/Comparison.md)
 
 Credits
 ------------
