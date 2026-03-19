@@ -14,29 +14,3 @@ half BurleyDiffuse(float NdotV, float NdotL, float LdotH, float roughness) {
     
     return (lightScatter * viewScatter * NdotL * energyFactor);
 }
-
-/*
-
-Lit Shader with Burley (Disney) diffuse model.
-
-This is Frostbite version with renormalization of energy ("Moving Frostbite to Physically Based Rendering" papers).
-
-Made with custom HLSL files related to Default Lit shader with making additional diffuse calculations.
-
-Lighting function was changed from LightingPhysicallyBased() and LightingLambert() in URP Lighting.hlsl
- to LightingBurley() in BurleyLighting.hlsl.
- 
-Burley diffuse model function is located in BurleyBRDF.hlsl file. 
-
-It is recommended to use it with Forward/Forward+ rendering paths
-because deferred shading is processed not in this shader's pass, but in the StencilDeferred.hlsl Gbuffer pass. 
-
-<b>Using with Deferred Rendering Path:<b>
-
-1) Use BurleyLitForwardOnly (ineffective with many lights). This will force process shading in Forward pass after GBuffer pass.
-
-
-----ДОБАВИТЬ ПОЗЖЕ-----
-2) Replace URP's Lighting.hlsl with same file from DeferredBurley folder. That will replace LightingPhysicallyBased() definition
-to same defenition as LightingBurley(). This will cause all Default Lit objects shaded with Burley diffuse model.
-*/
