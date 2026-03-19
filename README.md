@@ -4,11 +4,11 @@ Burley Lit Shader for URP
 
 Description
 ------------
-Lit Shader with Burley (Disney) diffuse model for Unity Universal Render Pipeline [[Burley12]](#Credits).
+Lit Shader with Burley (Disney) diffuse model for Unity Universal Render Pipeline.
 
 Based on Default Lit shader from URP package. Diffuse calculations was replaced and added in this package files, other things remained the same.
 
-This is Frostbite version with renormalization of energy [[Lagarde14]](#Credits).
+This is Frostbite's version with renormalization of energy.
 
 Lighting function was changed from `LightingPhysicallyBased()` and `LightingLambert()` in URP `Lighting.hlsl` to `LightingBurley()` in `BurleyLighting.hlsl`.
 
@@ -26,6 +26,6 @@ Comparison
 
 Credits
 ------------
-* [[Burley12]](https://media.disneyanimation.com/uploads/production/publication_asset/48/asset/s2012_pbs_disney_brdf_notes_v3.pdf) - Brent Burley. "Physically Based Shading at Disney".
-* [[Lagarde14]](https://seblagarde.wordpress.com/wp-content/uploads/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf) - Sébastien  Lagarde, Charles de Rousiers. "Moving Frostbite to Physically Based Rendering 3.0".
-* [G-Man model used in comparison (Half-Life: Alyx)](https://sketchfab.com/3d-models/gman-from-half-life-alyx-e1d7293117e64f458e0d364869e16bae)
+* [Brent Burley. "Physically Based Shading at Disney"](https://media.disneyanimation.com/uploads/production/publication_asset/48/asset/s2012_pbs_disney_brdf_notes_v3.pdf).
+* [Sébastien  Lagarde, Charles de Rousiers. "Moving Frostbite to Physically Based Rendering 3.0"](https://seblagarde.wordpress.com/wp-content/uploads/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf).
+* [G-Man model used in comparison (Half-Life: Alyx)](https://sketchfab.com/3d-models/gman-from-half-life-alyx-e1d7293117e64f458e0d364869e16bae).
