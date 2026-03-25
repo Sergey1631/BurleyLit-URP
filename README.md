@@ -20,6 +20,12 @@ Notes
 * You can change diffuse model of all Default Lit materials to Burley's by customizing URP package and replacing `Lighting.hlsl` file from this package (URP folder). In this case, you won't be able to choose diffuse model from Default (Lambert) or Burley - all `Lit` materials will have Burley diffuse model by default.
 * In case if you want use this shader with Deferred Path more efficient, you need to follow the point above.
 
+Installation
+------------
+* Go to "Window" -> "Package Manager".
+* In Package Manager click "+" at the top left corner, and select "Install package from git URL". 
+* Write the following URL: `https://github.com/Sergey1631/BurleyLit-URP.git` and click install.
+
 Comparison
 ------------
 [Lambert and Burley comparison](Documentation/Comparison.md)
