@@ -7,7 +7,7 @@ float3 F_BurleySchlick(float3 f0 , float f90 , float u)
 half BurleyDiffuse(float NdotV, float NdotL, float LdotH, float roughness) {
     float energyBias = lerp (0 , 0.5 , roughness );
     float energyFactor = lerp (1.0 , 1.0 / 1.51 , roughness);
-    float fd90 = energyBias + 2.0 * LdotH * LdotH;
+    float fd90 = energyBias + 2.0 * LdotH * LdotH * roughness;
     float3 f0 = float3 (1.0f , 1.0f , 1.0f);
     float lightScatter = F_BurleySchlick ( f0 , fd90 , NdotL ).r;
     float viewScatter  =  F_BurleySchlick (f0 , fd90 , NdotV ).r;
