@@ -26,10 +26,6 @@ Installation
 * In Package Manager click "+" at the top left corner, and select "Install package from git URL". 
 * Write the following URL: `https://github.com/Sergey1631/BurleyLit-URP.git` and click install.
 
-Comparison
-------------
-[Lambert and Burley comparison](Documentation/Comparison.md)
-
 Credits
 ------------
 * [Brent Burley. "Physically Based Shading at Disney".](https://media.disneyanimation.com/uploads/production/publication_asset/48/asset/s2012_pbs_disney_brdf_notes_v3.pdf)
